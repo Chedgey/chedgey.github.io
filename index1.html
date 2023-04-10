@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">  
+        <title><h1>Christopher Edgett - Computer Science Student</h1></title>
+        <link rel="icon" type="image/x-icon" href="Resources/Images/chrispic.png">
+        <link rel="stylesheet" href="styles.css">
+        <script src="myscripts.js"></script>
+    </head>
+
+    <body id="index-body">
+        <div class ="transition transition-1 is-active"></div>
+        
+        <header id="index-header">Christopher Edgett</header>
+        <div class="toggle-container">
+            <button class="theme wood" title="Wood mode" onclick="setTheme('wood')">Wood</button>
+            <button class="theme tropical" title="Tropical mode" onclick="setTheme('tropical')">Tropical</button>
+            <button class="theme gray" title="Gray mode" onclick="setTheme('gray')">Grayscale</button>
+        </div>
+        <nav id="index-nav">
+            <div id="about-item">
+                <a href="aboutme.html" target="_self">About me</a>
+            </div>
+            <div id="audio-item">
+                <audio controls>
+                    <source src="Resources/Audio/jazzy.wav">
+                </audio>
+            </div>
+            <div id="exp-item">
+                <a href="Experience.html" target="_self">Experience</a>
+            </div>
+        </nav>  
+        <section id="index-section">
+            <div id="intro-container">
+                <img src="resources/images/chrispic.png" class="img" alt="Photo of Christopher Edgett">
+                <p> 
+                    Hello ! I'm Chris, welcome to my website. I am an NSCC Ivany campus ilumni with an
+                    engineering technology background (environmental)
+                    currently studying computer science student at <a id="dal-link" href="http://www.dal.ca">Dalhousie University</a> 
+                    in my second year. I spend most of my time either studying, working and taking care of my dogs (more on that soon!). <br> Whats your name?<br>
+                </p>
+                <div id="contact-div">
+                    <h3 id="contact">Contact me</h3>
+                    <form id="name-form">
+                        <label for="name">Your Name:</label>
+                        <input type="text" name="name" id="name" placeholder="your name">
+                        <br>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+                <div id="linkd">
+                    <a href="https://www.linkedin.com/in/christopher-edgett-8ab273216/"><img class="img" src="Resources/Images/icons8-linkedin-240.png" alt="Linkin Icon"></a>
+                </div>
+                <div id="mailto">
+                    <a href="mailto:w0245498@gmail.com"><img class="img" src="Resources/Images/icons8-gmail-logo-375.png" alt="gmail Icon"></a>
+                </div>
+            </div>
+        </section>
+        <footer id="index-footer">        
+            <p> Icons provided by<a href="http//:www.icons8.com"> Icons8</a></p>
+            <p> Audio provided by<a href="http//:www.freesound.org"> Freesound</a></p>
+        </footer>
+    </body>
+    </html>

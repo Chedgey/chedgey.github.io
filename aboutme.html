@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">  
+        <title><h1>Christopher Edgett - Computer Science Student</h1></title>
+        <link rel="icon" type="image/x-icon" href="Resources/Images/chrispic.png">
+        <link rel="stylesheet" href="styles.css">
+        <script src="myscripts.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+
+    <body id="index-body">
+        <div class ="transition transition-1 is-active"></div>
+        <div class="toggle-container">
+            <button class="theme wood" title="Wood mode" onclick="setTheme('wood')">Wood</button>
+            <button class="theme tropical" title="Tropical mode" onclick="setTheme('tropical')">Tropical</button>
+            <button class="theme gray" title="Gray mode" onclick="setTheme('gray')">Grayscale</button>
+        </div>
+        <header id="index-header">Christopher Edgett</header>
+        <nav id="index-nav">
+            <div id="about-item">
+                <a href="experience.html" target="_self">Experience</a>
+            </div>
+            <div id="audio-item">
+                <audio controls>
+                    <source src="Resources/Audio/jazzy.wav">
+                </audio>
+            </div>
+            <div id="exp-item">
+                <a href="index1.html" target="_self">Home</a>
+            </div>
+        </nav>  
+        <section id="index-section">
+            <div id="intro-container">
+                <img src="resources/images/chrispic.png" class="img" alt="Photo of Christopher Edgett">
+                <div class="pet"><img src="Resources/Images/petebeach.jpg" id="pete" alt="pet on the beach"></div>
+                <div class="pet"><img src="Resources/Images/George3.jpg" id="george" alt="pet cat photo"></div>
+                <div class="pet"><img src="Resources/Images/rudy.jpg" id="rudy" alt="pet dog photo"></div>
+                <div><p>This is pete</p></div>
+                <div><p>This is George</p></div>
+                <div><p>This is Rudy</p></div>
+                <br>
+                <div id="textarea">
+                    <label for="pet-names">What are your pets name(s)?</label>
+                    <textarea id="pet-names" name="pet-names" rows="4" cols="50"></textarea>
+                </div>
+
+            </div>
+        </section>
+        <footer id="index-footer">        
+        </footer>
+    </body>

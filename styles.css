@@ -1,0 +1,334 @@
+
+:root,
+    :root.wood {
+        --section-bg: darkslategray;
+        --index-bg: rgb(145,101,6);
+        --nav-bg: goldenrod;
+        --contact-bg: black;
+    }
+    :root.gray {
+        --section-bg: rgb(0,0,0);
+        --index-bg: rgb(50,50,50);
+        --nav-bg: rgb(100,118,135);
+        --contact-bg: white;
+    }
+    :root.tropical {
+        --section-bg: rgb(10,93,150);
+        --index-bg: rgb(152,94,209);
+        --nav-bg: rgb(248,151,190);
+        --contact-bg: black;
+    }
+body{
+    box-sizing: border-box;
+    width: 99vw;
+}
+
+button {
+    font-size: 24px;;
+}
+#textarea{
+    color: var(--contact-bg);
+}
+
+.transition-1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 101;
+    background-color: black;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s ease-out;
+}
+.transition-1.is-active{
+    opacity: 1;
+    pointer-events: all;
+}
+
+*#photo {
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    margin: 2px;
+    background-color: beige;
+}
+
+#contact-div{
+    color:var(--contact-bg);
+}
+
+#aboutme-body{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto;
+    background-color: var(--index-bg);
+    font-size: 2em;
+    text-align: center;
+    grid-template-areas: 
+        "head head head head head head"
+        "nav nav nav nav nav nav"
+        "animals animals section section section section"
+        "foot foot foot foot foot foot";
+
+    font-family: Courier, monospace;
+    font-weight: bold;
+    font-size: 40px;
+}
+#index-body {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto;
+    background-color: var(--index-bg);
+    font-size: 2em;
+    text-align: center;
+    grid-template-areas: 
+        "btns . head . ."
+        "nav nav nav nav nav"
+        "section section section section section"
+        "foot foot foot foot foot";
+
+    font-family: Courier, monospace;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-left: 5px;
+    margin-right: 5px;
+    max-width: 100%;
+ }
+
+ .theme{
+    border-radius: 20px;
+    border: 5px groove silver;
+    background-color: seashell;
+ }
+ .theme:hover{
+    background-color: azure;
+ }
+ 
+ #index-header {
+    background: var(--nav-bg);
+    grid-area: head;   
+    padding: 10px;
+    border-radius: 20px;
+    border-style: outset;
+    border-left: 5px solid goldenrod;
+    border-right: 5px solid black;
+    margin: auto;
+    position: relative;
+    right: 60px;
+ }
+ 
+ #index-nav {
+    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-rows: auto;
+    grid-area: nav;
+    grid-template-areas: "about about audio audio exp exp";
+    margin-top: 2px;
+ }
+ #index-nav > div {
+    border-style: inset;
+    border-radius: 20px;
+    padding: 8px;
+    text-align: center;
+    font-size: 30px;
+    margin: auto;
+    border-left: solid goldenrod;
+    border-right: solid black;
+ }
+
+ #toggle-container{
+    grid-area: btns;
+ }
+
+ #about-item {
+    background-color: var(--nav-bg);
+    grid-area: about;
+    width: 450px;
+    height: 40px;
+ }
+
+ #audio-item {
+    background-color: var(--nav-bg);
+    grid-area: audio;
+    margin-top: 5px;
+    margin-bottom: 5px;
+ }
+
+ #exp-item {
+    background-color: var(--nav-bg);
+    grid-area: exp;
+    width: 450px;
+    height: 40px;
+ }
+
+img + p{
+    color: white;
+}
+
+#index-section{
+    border-radius: 20px;
+    margin-top: 5px;
+    border: 1px solid goldenrod;
+    background-color: var(--section-bg);
+    grid-area: section;
+    height: auto;
+}
+
+.img{
+    margin-left: -10px;
+    margin-bottom: -10px;
+    margin-top: -10px;
+    border: 1px solid goldenrod;
+    border-radius: 20px;
+    background-color: black;
+    border-style: double;
+    max-height: 520px;
+    max-width: 264px;
+    grid-area: img;
+}
+#pet-names{
+    z-index: 1;
+}
+
+#index-section > div {
+    border-style: inset;
+    border-radius: 20px;
+    padding: 8px;
+    text-align: center;
+    font-size: 30px;
+    margin: auto;
+    border: solid black;
+}
+
+ #intro-container{
+    display: grid;    
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: auto auto auto auto;
+    grid-template-areas: "img para para para" "img linkd contact mailto";
+ }
+
+ p {
+    grid-area: para;
+ }
+
+ img{
+    grid-area: img;
+ }
+
+ h3{ grid-area: contact;}
+
+ #linkd{
+
+    grid-area: linkd;
+ }
+ #mailto {
+    grid-area: mailto;
+ }
+
+a > img {
+    width: 150px;
+    height: 150px;
+}
+
+
+a:link {
+    color:black;
+}
+a:hover {
+    color:white;
+}
+a:active {
+    color:greenyellow;
+}
+ 
+ #index-footer {
+    border-radius: 20px;
+    text-align: left;
+    background: var(--nav-bg);
+    grid-area: foot;
+    height: 50px;
+    border-style: solid;
+    margin-bottom: -5px;
+    margin-top: 5px;
+ }
+ #index-footer > p {
+    font-size: 18px;
+    margin-top: 2px;
+    margin-bottom: -1px;
+    margin-left: 10px;
+ }
+
+ table {
+    font-family: Courier, monospace;
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 20px;
+  }
+
+  th, td {
+    padding: 12px;
+    text-align: left;
+    border-radius: 20px;
+  }
+
+  th {
+    background-color: goldenrod;
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+  }
+
+  tr:nth-child(odd) {
+    background-color: lightblue;
+  }
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+  ul {
+    list-style: square;
+  }
+
+  ol {
+    list-style-type: upper-roman; 
+
+  }
+
+  li {
+    margin-bottom: 8px;
+  }
+#pete, #george, #rudy{
+    height: 250px;
+    width: 250px;
+    border: 1px solid goldenrod;
+    padding: 5px;
+    margin-top: 20px;
+    background-color: black;
+    border-radius: 20px;
+}
+.pet {
+    margin-top: 40px;
+    margin-bottom: -150px;
+}
+a[href$=".org"]{
+    color: green;
+}
+
+@media only screen and (max-width: 600px) {
+    /* Mobile styles */
+    #intro-container {
+        grid-template-columns: auto auto auto auto auto;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas: 
+        "img img img img img" 
+        "para para para para para" 
+        "linkd linkd contact mailto mailto" !important;
+        justify-items: center;
+    }
+}
